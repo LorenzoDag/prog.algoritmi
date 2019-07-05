@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.27)  27 JUN 2019 14:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.27)  3 JUL 2019 15:01
 entering extended mode
 **./relazione.tex
 (relazione.tex
@@ -323,35 +323,45 @@ emporium.jpg>] (relazione.toc)
 \openout3 = `relazione.toc'.
 
  [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 38.
 
 ("C:\Users\Hello\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
+<img/big-o-complexity.png, id=14, 785.93625pt x 455.7025pt>
+File: img/big-o-complexity.png Graphic file (type png)
+<use img/big-o-complexity.png>
+Package pdftex.def Info: img/big-o-complexity.png  used on input line 58.
+(pdftex.def)             Requested size: 306.5139pt x 177.72325pt.
 
-[3]
-<img/09_01_int_rettangoli.png, id=18, 646.415pt x 466.74374pt>
+[3 <./img/big-o-complexity.png>]
+<img/rieman.png, id=21, 269.005pt x 188.705pt>
+File: img/rieman.png Graphic file (type png)
+<use img/rieman.png>
+Package pdftex.def Info: img/rieman.png  used on input line 81.
+(pdftex.def)             Requested size: 269.00433pt x 188.70453pt.
+ [4 <./img/rieman.png>]
+<img/09_01_int_rettangoli.png, id=26, 646.415pt x 466.74374pt>
 File: img/09_01_int_rettangoli.png Graphic file (type png)
 <use img/09_01_int_rettangoli.png>
-Package pdftex.def Info: img/09_01_int_rettangoli.png  used on input line 54.
+Package pdftex.def Info: img/09_01_int_rettangoli.png  used on input line 92.
 (pdftex.def)             Requested size: 161.60335pt x 116.68564pt.
- [4 <./img/09_01_int_rettangoli.png>]
-<img/09_02_int_trapezi.png, id=30, 624.3325pt x 427.5975pt>
+ [5 <./img/09_01_int_rettangoli.png>]
+<img/09_02_int_trapezi.png, id=38, 624.3325pt x 427.5975pt>
 File: img/09_02_int_trapezi.png Graphic file (type png)
 <use img/09_02_int_trapezi.png>
-Package pdftex.def Info: img/09_02_int_trapezi.png  used on input line 90.
+Package pdftex.def Info: img/09_02_int_trapezi.png  used on input line 128.
 (pdftex.def)             Requested size: 156.08273pt x 106.89911pt.
- [5 <./img/09_02_int_trapezi.png>]
-[6]
-<img/09_04_simmetria.png, id=41, 629.35126pt x 390.45876pt>
+ [6 <./img/09_02_int_trapezi.png>] [7]
+<img/09_04_simmetria.png, id=51, 629.35126pt x 390.45876pt>
 File: img/09_04_simmetria.png Graphic file (type png)
 <use img/09_04_simmetria.png>
-Package pdftex.def Info: img/09_04_simmetria.png  used on input line 147.
+Package pdftex.def Info: img/09_04_simmetria.png  used on input line 192.
 (pdftex.def)             Requested size: 157.33742pt x 97.61444pt.
 
-Overfull \hbox (32.01671pt too wide) detected at line 154
+Overfull \hbox (32.01671pt too wide) detected at line 199
 [][] \OML/cmm/m/it/10  \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML
 /cmm/m/it/10 dx \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/
 cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [][](\OML/c
@@ -361,58 +371,70 @@ m/m/it/10 C\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [][] \OML/cmm
 [][] \OML/cmm/m/it/10 Cdx
  []
 
-[7 <./img/09_04_simmetria.png>] [8]
-Overfull \hbox (61.43304pt too wide) in paragraph at lines 195--210
+[8 <./img/09_04_simmetria.png>] [9]
+Overfull \hbox (61.43304pt too wide) in paragraph at lines 240--255
 [][] 
  []
 
-[9]
-<img/09_06_pluff.png, id=53, 631.35875pt x 397.485pt>
+
+Overfull \hbox (14.3422pt too wide) detected at line 267
+\OML/cmm/m/it/10 T[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 T[]\OT1/cmr/m/n/10 ) + 
+\OML/cmm/m/it/10 T[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 O\OT1/cmr/m/n/10 (\OML/
+cmm/m/it/10 n\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 O\OT1/cmr/m/n/10 (\OML/cmm/m/
+it/10 n[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 O\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
+0 n\OT1/cmr/m/n/10 )) = \OML/cmm/m/it/10 O\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n[]
+ \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 O\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n\OT1/c
+mr/m/n/10 ))
+ []
+
+[10]
+<img/09_06_pluff.png, id=62, 631.35875pt x 397.485pt>
 File: img/09_06_pluff.png Graphic file (type png)
 <use img/09_06_pluff.png>
-Package pdftex.def Info: img/09_06_pluff.png  used on input line 226.
+Package pdftex.def Info: img/09_06_pluff.png  used on input line 280.
 (pdftex.def)             Requested size: 157.8393pt x 99.371pt.
- [10 <./img/09_06_pluff.png>]
-<img/09_07_f_rnd.png, id=59, 632.3625pt x 463.7325pt>
+ [11 <./img/09_06_pluff.png>]
+<img/09_07_f_rnd.png, id=67, 632.3625pt x 463.7325pt>
 File: img/09_07_f_rnd.png Graphic file (type png)
 <use img/09_07_f_rnd.png>
-Package pdftex.def Info: img/09_07_f_rnd.png  used on input line 242.
+Package pdftex.def Info: img/09_07_f_rnd.png  used on input line 296.
 (pdftex.def)             Requested size: 158.09024pt x 115.93283pt.
- [11 <./img/09_07_f_rnd.png>] (relazione.aux)
+ [12 <./img/09_07_f_rnd.png>] (relazione.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4759 strings out of 492946
- 69459 string characters out of 3126266
- 150835 words of memory out of 3000000
- 8578 multiletter control sequences out of 15000+200000
- 12547 words of font info for 48 fonts, out of 3000000 for 9000
+ 4773 strings out of 492946
+ 69848 string characters out of 3126266
+ 150915 words of memory out of 3000000
+ 8589 multiletter control sequences out of 15000+200000
+ 12906 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,38p,796b,300s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,14n,38p,796b,304s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Hello/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Hello/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Hel
-lo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
-C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Hello/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Hello/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Hello/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
-/Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.p
-fb><C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy7.pfb><C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb><C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on relazione.pdf (11 pages, 423020 bytes).
+onts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Hello/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Hello/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/
+Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pf
+b><C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmmi7.pfb><C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Hello/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Hello/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Hello/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Use
+rs/Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy5.pfb><C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb><C:/Users/Hello/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Hello/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on relazione.pdf (12 pages, 453578 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
+ 125 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

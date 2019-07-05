@@ -32,7 +32,36 @@
 \section{Introduzione}
 In analisi numerica le formule di integrazione, o formule di quadratura, consistono in una serie di metodi che stimano il valore di un integrale definito senza la necessità di dover calcolare la primitiva della funzione integranda.
 
-la necessità di utilizzare le formule di quadratura deriva da diversi motivi:
+Parliamo di approssimazione in quanto gli algoritmi ed i risultati da essi generati, in generale, sono sottoposti ad errori di vario tipo:
+
+\begin{itemize}
+\item Errori di approssimazione: 
+
+- si verificano quando arrotondiamo numeri per eccesso o per difetto.
+\item Errori umani: 
+
+- non prevedibili, in quanto si verificano nel momento in cui l'utente inserisce i dati di imput.
+\item Errori di troncamento: 
+
+- si verificano nel momento in cui tronchiamo i numeri, ad una certa cifra decimale, senza arrotondare.
+\item Errori di overflow: 
+
+- si verificano nel momento in cui si supera il limite di dimensione massima dello stack. Tipico delle funzioni ricorsive, è evitabile effettuando controlli accurati.
+\end{itemize}
+
+Negli algoritmi proposti verranno considerate soluzioni alle problematiche sopra descritte, ed anche una valutazione sulla complessità computazionale degli stessi.
+A tal proposito utilizzeremo la notazione \textit{\textbf{O-grande}} per valutare la complessità computazionale degli algoritmi proposti valutandola nel caso peggiore.
+
+\begin{center}
+\begin{figure}[ht]
+
+\includegraphics[scale=0.39]{img/big-o-complexity.png} 
+\label{fig:complex}
+\end{figure}
+
+\end{center}
+\newpage
+La necessità di utilizzare le formule di quadratura deriva da diversi motivi:
 \begin{itemize}
 \item non tutte le funzioni ammettono primitiva in forma esplicita.
 \item la primitiva può essere molto complicata da valutare.
@@ -42,9 +71,18 @@ Distinguiamo le formule di quadratura in due grandi categorie: le formule di New
 
 nel seguente articolo ci soffermeremo sulle prime citate sopra con un accenno anche al metodo di Montecarlo utilizzato soprattutto per funzioni di piu variabili.
 
-In generale i metodi numerici non stocastici consistono nel suddividere l'intervallo di integrazione in una molteplicità di sottointervalli valutando poi la funzione stessa in più punti.
+In generale i metodi numerici non stocastici trovano una soluzione al problema seguendo la definizione dell'integrale di Riemann, suddividendo quindi l'intervallo di integrazione in una molteplicità di sottointervalli valutando poi la funzione stessa in più punti.
 
-Tutti i metodi studiati verranno implementati attraveso l'utilizzo del linguaggio c++.
+Tutti i metodi studiati verranno implementati attraveso l'utilizzo del linguaggio java.
+
+\begin{center}
+\begin{figure}[ht]
+
+\includegraphics[scale=1]{img/rieman.png} 
+\label{fig:rieman}
+\end{figure}
+
+\end{center}
 
 \newpage
 \section{Il metodo dei rettangoli}
@@ -123,6 +161,13 @@ Se si testa il funzionamento dell’algoritmo sulla funzione $y=x^2$ si scopre c
 &n=100,\quad S=9,00045\\
 &n=1000,\quad S=9,0000045\\
 \end{align*}
+
+\subsection{Complessità computazionale}
+Per calcolare la complessità computazionale del metodo tralasceremo le operazioni di assegnazione, gli eventuali controlli del caso e i calcoli iniziali che risultano avere complessità pari a $O(1)$ che quindi non influenzano il risultato finale.
+
+L'algoritmo proposto presenta al suo interno un unico ciclo \textit{for}, il cui numero di iterazioni $n$ dipende dal numero di sottointervalli che desideriamo generare per ottenere un' approssimazione più o meno precisa del valore dell' integrale stesso.
+
+La complessità computazionale dell' algoritmo risulta per cui essere : \[T_{tot,worst} = O(n)\]
 
 \newpage
 \section{La formula di Simpson}
@@ -212,6 +257,15 @@ Vale la pena di testare i tre metodi descritti, per calcolare un integrale di cu
 
 Dai risultati descritti nella tabella possiamo notare come il metodo Di Simpson risulta convergere al risultato esatto molto più rapidamente degli altri due metodi che necessitano di un numero di intervalli molto superiore per avvicinarsi al risultato ottenuto dall'algoritmo di Simpson con 40 intervalli.
 
+\subsection{Complessità computazionale}
+
+Per calcolare la complessità computazionale del metodo tralasceremo le operazioni di assegnazione, gli eventuali controlli del caso e i calcoli iniziali che risultano avere complessità pari a $O(1)$ che quindi non influenzano il risultato finale.
+
+Il primo ciclo che incontriamo all' interno del codice risulta avere complessità computazionale pari a \[T_{for_1,worst} = O(n)\]
+
+Proseguendo nell'algoritmo incontriamo un \textit{do-while} la cui complessità computazionale $T_{do-while,worst}$ dipenderà dal numero massimo $n_{max}$ di iterazioni che l' utente permetterà di eseguire al programma e dalla precisione richiesta sempre dall' utente (che però non influenza il calcolo). All'interno del ciclo \textit{do-while} incontriamo anche un secondo ciclo \textit{for} la cui complessità sarà poi inclusa nel calcolo della precedente: \[T_{for_2,worst} = O(n)\]. La complessità finale del ciclo \textit{do-while} risulta quindi essere : \[T_{do-while,worst} = O(n_{max}*T_{for_2,worst} = O(n_{max}*O(n))\]
+Di conseguenza, la complessità totale dell'algoritmo nel caso peggiore risulta essere : \[T_{tot,worst} = T_{for_1,worst})+T_{do-while,worst} = O(n)+O(n_{max}*O(n)) =O(n_{max}*O(n))\]
+
 \newpage
 
 \section{Il metodo Montecarlo}
@@ -273,5 +327,9 @@ Proviamo il metodo sul calcolo di $\int_0^3 x^2dx$ e confrontiamolo con i risult
 \hfill
 
 Osserviamo che il metodo è impreciso e non è detto che all'aumentare dei numeri generati migliori la precisione. Si tratta di un metodo statistico, cioè che produce risultati in media vicini al valore esatto. Infatti lo numero di valori generati non dà, in genere, lo stesso risultato. Bisogna quindi ripetere gli esperimenti e fare la media.
+
+\subsection{Complessità computazionale}
+
+Per calcolare la complessità computazionale del metodo tralasceremo le operazioni di assegnazione, gli eventuali controlli del caso e i calcoli iniziali che risultano avere complessità pari a $O(1)$ che quindi non influenzano il risultato finale.
 
 \end{document}
